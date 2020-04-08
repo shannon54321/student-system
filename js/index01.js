@@ -117,7 +117,7 @@ function renderTable(data) {
 
 function transferData(url,data,cb){
 	$.ajax({
-		url: 'http://api.duyiedu.com' + url,
+		url: 'https://api.duyiedu.com' + url,
 		type: 'get',
 		data: $.extend({
 			appkey: 'shannon_1584933284957'
