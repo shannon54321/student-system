@@ -1,0 +1,206 @@
+
+* {
+	margin:0;
+	padding: 0;
+
+}
+
+html, body, .wrapper {
+	height:100%;
+	width: 100%;
+} 
+
+.wrapper {
+    position: relative;
+}
+
+.header {
+	position: relative;
+	width: 100%;
+	height: 70px;
+	background-color: #354457;
+
+}
+
+.header .logo {
+	width: 200px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 14px;
+    color: #b3bcc5;
+    padding-left: 20px;
+}
+
+.header .logo img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+/*头部结束*/
+
+
+.content {
+	position: relative;
+	height: calc(100% - 70px);
+	width: 100%;
+	display: inline-block;
+}
+.content .content-left{
+	width: 200px;
+    height: 100%;
+    background-color: #4d5e70;
+    color: #b3bcc5;
+    display: inline-block;
+    position: relative;
+}
+
+.content-left .menu-list dt,.content-left .menu-list dd {
+	font-size: 14px;
+	height: 40px;
+	line-height: 40px;
+
+}
+.content-left .menu-list dt {
+	font-weight: bold;
+	padding-left:8px;
+}
+.content-left .menu-list dd {
+	padding-left: 30px;
+	cursor: pointer;
+}
+.content-left .menu-list dd:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #354457;
+}
+.content-left .menu-list dd.active {
+	background-color: #ddd;
+    color: #354457;
+}
+
+/*左边结束*/
+
+
+.content .content-right {
+	position: absolute;
+	width: calc(100% - 200px);
+	min-width: 500px;
+	height: 100%;
+	top: 0;
+	margin-left: 200px;
+	background-color: #eee;
+
+}
+
+.content-right .student-content {
+	display: none;
+}
+
+.content-right .student-content.student-content-active {
+	display: block;
+}
+
+
+.content-right .student-list table {
+	width: 100%;
+	text-align: center;
+}
+.content-right .student-list table thead {
+	background-color: #e3e8ee;
+    color: #646987;
+    font-size: 14px;
+}
+.content-right .student-list table tbody {
+	background-color: #fff;
+    font-size: 14px;
+}
+tr {
+    height: 30px;
+    line-height: 30px;
+}
+.content-right .student-list table tbody tr td .btn {
+	color: #fff;
+	padding: 3px 10px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.content-right .student-list table tbody tr td .btn.edit{
+	background-color: #5cb85c;
+}
+.content-right .student-list table tbody tr td .btn.edit:hover{
+	background-color: #398439;
+    border-color: #255625;
+}
+.content-right .student-list table tbody tr td .btn.del{
+	background-color: #d9534f;
+}
+.content-right .student-list table tbody tr td .btn.del:hover{
+	background-color: #c9302c;
+	border-color: #255625;
+}
+
+
+.content-right .add-student {
+	width: 400px;
+	margin: 50px auto;
+}
+.student-content form div {
+	margin: 10px 0;
+}
+.student-content form input, .student-content form label {
+	font-size: 16px;
+}
+.student-content form label {
+	width: 100px;
+	margin-right: 10px;
+	text-align: right;
+	display: inline-block;
+}
+.student-content form label.radio-label {
+	width: 20px;
+}
+
+.student-content .btn {
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	margin-right: 10px;
+}
+
+
+
+.dialog {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: none;
+}
+.dialog.show {
+    display: block;
+}
+.dialog .mask {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.dialog .dialog-content {
+    width: 500px;
+    height: 450px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -225px;
+    padding: 10px;
+}
+.dialog .dialog-content form {
+    width: 400px;
+    margin: 0 auto;
+}
